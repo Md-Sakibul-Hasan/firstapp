@@ -32,26 +32,7 @@ class MyHomepage extends StatelessWidget{
 
   }
 
-  MyAlertDialog(context){
-    return showDialog(
-        context: context,
-        builder:(BuildContext context){
-          return Expanded(
-            child: AlertDialog(
-              title: Text("Alert !"),
-              content: Text("Do you want to save?"),
-              actions: [
-                TextButton(onPressed: (){
-                  MySnackBar("Saved Successfully",context);
-                  Navigator.of(context).pop();
-                  }, child: Text("Yes")),
-                TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text("No")),
-              ],
-            ),
-          );
-        }
-    );
-  }
+
 
 
   var MyItems=[
